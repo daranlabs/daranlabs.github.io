@@ -1,0 +1,60 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "IBM Plex Sans", Avenir, "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+
+.team-member {
+  min-width: 900px;
+  width: 70%;
+  margin: 70px 0;
+  display: flex;
+  align-items: center;
+}
+
+.team-member .image {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member img {
+  height: 200px;
+  width: 200px;
+  border: none;
+  border-radius: 500px;
+  object-fit: cover;
+}
+
+.team-member .meta {
+  width: 70%;
+}
+
+.team-member .meta div {
+  margin: 10px 0;
+}
+
+.team-member .name {
+  font-family: "IBM Plex Serif";
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.team-member .designation {
+  font-family: "IBM Plex Serif";
+  font-size: 1.3rem;
+}

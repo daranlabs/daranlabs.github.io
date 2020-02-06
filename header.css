@@ -1,0 +1,119 @@
+header {
+  border-top: 10px solid #479ed7;
+  background: #222;
+}
+
+header * {
+  color: #ccc;
+}
+
+header nav {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  margin: 0 30px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #479ed7;
+}
+
+@keyframes spin {
+  70% {
+    /* transform: rotate(50deg) scale(1.4); */
+    transform: rotate(50deg);
+  }
+  95% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+nav img {
+  height: 7vh;
+  width: auto;
+  cursor: pointer;
+  margin: 0 30px;
+}
+
+nav img:hover {
+  animation: spin 0.7s 1 0s ease-out;
+}
+
+header .hero {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+}
+
+header .hero > div {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+header .hero .right img {
+  width: 50vw;
+  height: auto;
+}
+
+header .hero .left div {
+  width: 35vw;
+}
+
+header .hero .left div h1 {
+  font-size: 3rem;
+  font-family: "IBM Plex Serif";
+}
+
+header .hero .left p {
+  text-align: justify;
+}
+
+/* Responsiveness */
+@media (max-width: 950px) {
+  header .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  header .hero .left,
+  header .hero .right {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  header .hero .left > div {
+    width: 100%;
+    padding: 40px;
+  }
+
+  header .hero .right img {
+    width: 90%;
+  }
+
+  header .hero .left p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 800px) {
+  nav a {
+    display: none;
+  }
+}
