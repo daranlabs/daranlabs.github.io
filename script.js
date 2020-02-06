@@ -21,7 +21,7 @@ function populateTeam() {
       name: "Ashvin Verma",
       image: "ashvin.jpg",
       description:
-        "Ashvin is our management and design lead, with experience leading international 60+ people teams in engineering competitions. He has also been a Summit Finalist in the Conrad Challenge. He is also our design visualizer."
+        "Ashvin is our management and design lead, with experience leading international 60+ people teams in engineering competitions. He has also been a Summit Finalist in the Conrad Spirit of Innovation Challenge. He is also responsible for the execution of our product vision."
     },
     {
       name: "Somesh Kar",
